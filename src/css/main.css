@@ -56,3 +56,34 @@ margin-bottom: 40px;
     display: none;
  }
 }
+/* World & Story */
+.world-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+.desk{
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+.world-wrapper{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 993px;
+    gap: 24px;
+width: 993px;
+    margin-top: 120px;
+}
+.world-text{
+    width: 360px;
+}
+.desk{
+    display: block;
+}
+}

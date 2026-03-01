@@ -41,14 +41,33 @@ background: linear-gradient(180deg, #fff2b3 0%, #f5d84b 100%);
     color: #e3effc;
     text-align: center;
 }
-h2{
+h2 {
+  position: relative;
   font-family: "Cormorant Infant", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    background: linear-gradient(180deg, #f3ff4b 0%, #e9a30c 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 2px 0 rgba(40, 22, 12, 0.9), inset -2px 0 4px 0 #28160c;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
+
+  background: linear-gradient(180deg, #f3ff4b 0%, #e9a30c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* обводка */
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  color: transparent;
+text-shadow: 4px 4px 4px rgba(40, 22, 12, 0.9);
+-webkit-text-stroke: 4px #28160c;
+filter: drop-shadow(0 4px 4px rgba(40, 22, 12, .4));
+}
+@media only screen and (min-width: 1440px) {
+  h2{
+    font-size: 48px;
+  }
 }
