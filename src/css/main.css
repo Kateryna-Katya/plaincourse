@@ -190,3 +190,27 @@ gap: 16px;
     margin-right: auto;
  }
 }
+/* For Players Who Enjoy the Journey */
+.players-section{
+    background-image: url("/img/players/mob.png");
+    background-repeat: no-repeat;
+    background-size: 100% 371px;
+    background-position: bottom center;
+        height: 660px;
+}
+.players-text{
+    margin-top: 24px;
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 1440px) {
+.players-section{
+    background-image: url("/img/players/desk.png");
+    background-size: 100% 810px;
+height: 1055px;
+}
+.players-text{
+    width: 579px;
+}
+}
