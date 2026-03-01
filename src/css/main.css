@@ -129,6 +129,10 @@ align-items: center;
 gap: 16px;
     color: #e3effc;
 }
+.special-img{
+    width: 100px;
+    height: 100px;
+}
 @media only screen and (min-width: 1440px) {
  .special-list{
     margin-top: 32px;
@@ -141,6 +145,10 @@ gap: 16px;
  .special-item{
     width: 310px;
         height: 300px;
+ }
+ .special-img{
+    width: 140px;
+    height: 140px;
  }
 }
 /* Extended Exploration Mode */
@@ -160,4 +168,25 @@ gap: 16px;
     background-size: 100% 831px;
     height: 931px;
   }
+}
+/* Atmosphere & Sound */
+.atmosphere-section{
+    background: linear-gradient(180deg, #e3effc 0%, #aed1fa 100%);
+}
+.atmosphere-wrapper{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+@media only screen and (min-width: 1440px) {
+ .atmosphere-wrapper{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 908px;
+    margin-left: auto;
+    margin-right: auto;
+ }
 }
