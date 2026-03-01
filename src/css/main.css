@@ -143,4 +143,21 @@ gap: 16px;
         height: 300px;
  }
 }
-
+/* Extended Exploration Mode */
+.mode-section{
+    background-image: url("/img/mode/mob.png");
+    background-repeat: no-repeat;
+    background-size: 100% 428px;
+    background-position: bottom center;
+    height: 678px;
+}
+.mode-text{
+    margin-top: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .mode-section{
+    background-image: url("/img/mode/desk.png");
+    background-size: 100% 831px;
+    height: 931px;
+  }
+}
