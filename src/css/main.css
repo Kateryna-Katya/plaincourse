@@ -87,3 +87,24 @@ width: 993px;
     display: block;
 }
 }
+/* Core Gameplay Experience */
+.core-section{
+    background-image: url("/img/core/mob.png");
+    background-repeat: no-repeat;
+    background-size: 100% 493px;
+    background-position: bottom center;
+    height: 815px;
+}
+.core-text{
+    margin-top: 24px;
+}
+@media only screen and (min-width: 1440px) {
+.core-section {
+        background-image: url("/img/core/desk.png");
+        background-size: 100% 1009px;
+        height: 1110px;
+    }
+}
+
+
+

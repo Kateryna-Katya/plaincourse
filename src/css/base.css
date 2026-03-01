@@ -41,17 +41,22 @@ background: linear-gradient(180deg, #fff2b3 0%, #f5d84b 100%);
     color: #e3effc;
     text-align: center;
 }
+
 h2 {
+    position: relative;
+  isolation: isolate;
+  z-index: 1;
   position: relative;
   font-family: "Cormorant Infant", sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
-  color: transparent;
+  color: #F0C62A;
 
   background: linear-gradient(180deg, #f3ff4b 0%, #e9a30c 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  
 }
 
 /* обводка */
