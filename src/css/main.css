@@ -105,6 +105,42 @@ width: 993px;
         height: 1110px;
     }
 }
-
-
+/* Special Movement Mechanics */
+.special-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+}
+.special-item{
+    border: 4px solid #174a85;
+        border-radius: 16px;
+        padding: 24px 22px;
+        width: 310px;
+        height: auto;
+        background: linear-gradient(180deg, #6f9fd7 0%, #174a85 100%);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+    color: #e3effc;
+}
+@media only screen and (min-width: 1440px) {
+ .special-list{
+    margin-top: 32px;
+    gap: 48px;
+    flex-direction: row;
+    justify-content: center;
+    width: 1026px;
+        height: 300px;
+ }
+ .special-item{
+    width: 310px;
+        height: 300px;
+ }
+}
 
