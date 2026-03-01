@@ -129,3 +129,39 @@
         Each time you play, it's like continuing the same story, but with little twists that keep it fresh.</p>
     </div>
 </section>
+<section class="demo-section" id="demo">
+    <div class="headline-container">
+        <p>The Game</p>
+    </div>
+    <div class="container">
+        <h2 class="visually-hidden">Game</h2>
+<div class="demo-wrapper" id="game">
+    <picture>
+        <source srcset="
+                /img/demo/demo-desk.png 1x,
+                /img/demo/demo-desk@2x.png 2x
+                " media="(min-width: 1440px)" />
+        <source srcset="
+                /img/demo/demo-mob.png 1x,
+                /img/demo/demo-mob@2x.png 2x
+                " media="(max-width: 1439px)" />
+        <img class="demo-img" src="/img/demo/demo-mob.png" alt="Catch the wind" loading="lazy" />
+    </picture>
+
+
+    <div class="iframe-wrapper">
+        <iframe id="gameIframe" name="gameIframe"></iframe>
+
+        <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+            <img class="close-img" src="/img/demo/close.png" alt="Close">
+        </button>
+    </div>
+    <a class="demo-btn btn pulse" href="#"
+        data-game-url="https://games-cv.com/catch_the_wind_bonus_buy" target="gameIframe">
+        <p>Start the Journey</p>
+    </a>
+</div>
+<p class="demo-text">plaincourse.pro IS A PLATFORM FOR HAVING FUN. THE OUTCOME OF THIS GAME EXPERIENCE SHOULD NOT BE CONSIDERED A
+REFLECTION OF REAL-LIFE RESULTS. GAME IS INTENDED FOR ADULT AUDIENCES OVER 18 YEARS OF AGE. ENJOY THE EXPERIENCE.</p>
+    </div>
+</section>

@@ -214,3 +214,170 @@ height: 1055px;
     width: 579px;
 }
 }
+/* Demo */
+.demo-section{
+    background: linear-gradient(180deg, #e3effc 0%, #aed1fa 100%);
+}
+.demo-wrapper {
+    position: relative;
+    margin: 0 auto 0;
+    width: 323px;
+    height: 622px;
+}
+
+.demo-img {
+    width: 323px;
+    height: 622px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== КНОПКА ===== */
+
+.demo-btn {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    display: inline-block;
+    top: 80%;
+    left: 13%;
+    width: 240px;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.demo-btn.pulse {
+    animation: pulse-animation 2s infinite;
+    transition: transform 0.3s ease;
+
+}
+
+
+/* ===== ФОН ===== */
+
+.demo-img {
+    width: 100%;
+    display: block;
+}
+
+/* ===== IFRAME ===== */
+
+.iframe-wrapper {
+    position: absolute;
+    top: 3%;
+    left: 51%;
+    transform: translateX(-51%);
+    width: 272px;
+    height: 586px;
+    z-index: 5;
+
+    /* 🔥 ГОЛОВНЕ ВИПРАВЛЕННЯ */
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+#gameIframe {
+    width: 272px;
+    height: 586px;
+    border: none;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000;
+    border-radius: 30px;
+}
+
+/* АКТИВНИЙ СТАН */
+.iframe-wrapper.active {
+    pointer-events: auto;
+    z-index: 20;
+}
+
+#gameIframe.active {
+    display: block;
+}
+
+/* ===== КНОПКА ЗАКРИТТЯ ===== */
+
+#closeIframeBtn {
+    position: absolute;
+    top: 40px;
+    right: 10%;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 9999;
+    /* 🔥 НАД iframe */
+    pointer-events: auto;
+}
+
+#closeIframeBtn.active {
+    display: block;
+}
+
+.close-img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.demo-text {
+    margin-top: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .demo-wrapper {
+        width: 942px;
+        height: 682px;
+    }
+
+    .demo-img {
+        width: 942px;
+        height: 682px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iframe-wrapper {
+
+        width: 890px;
+        height: 630px;
+    }
+
+    #gameIframe {
+        width: 890px;
+        height: 630px;
+    }
+
+    .demo-btn {
+        left: 38%;
+
+        transform: translateX(-50%);
+    }
+
+    .demo-text {
+          width: 1036px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
